@@ -8,7 +8,6 @@ include('includes/html_code.php');
  	$item_number = $_GET['id'];
  	if(!empty($item_number)){
  		$query1 = "DELETE FROM `items_available` WHERE `item_number` = '$item_number'";
- 		
      
  		if($delete1 = mysql_query($query1)){
  			$i = 1;

@@ -5,8 +5,7 @@ include('includes/html_code.php');
 
 function searchItem(){
 
-	 $query = "SELECT `receivers_item`,`offerers_item`, `receivers_id` FROM `offers_open` WHERE `offerers_id` = '".mysql_real_escape_string($_SESSION['user_id'])."'";
-	//$query = "SELECT `title`,`owner_id`, `image_path1`, `items_wanted` FROM `items_available` WHERE `category` = '".mysql_real_escape_string($y)."'";
+	$query = "SELECT `receivers_item`,`offerers_item`, `receivers_id` FROM `offers_open` WHERE `offerers_id` = '".mysql_real_escape_string($_SESSION['user_id'])."'";
 	$query_run =mysql_query($query);
 	if(mysql_num_rows($query_run)==0){
 		echo "<P>Sorry, you don't have any messages.</p>";
@@ -68,13 +67,6 @@ function searchItem(){
 	}
 
 
-
-
-
-
-
-
-
 ?>
 
 <!doctype html>
@@ -85,16 +77,13 @@ function searchItem(){
 	<link rel = 'stylesheet' href = 'css/form.css'>
 	<link rel = 'stylesheet' href = 'css/account.css'>
 	<link rel = 'stylesheet' href = 'css/search.css'>
-
-
 </head>
 
 <body>
 	<div id = 'wrapper'>
        <?php headerAndSearchCode();?>
 	   <?php right_bar();?>
-		
-          
+		  
 		<section id = 'right_side'>
          <?php searchItem();?>
 		</section>

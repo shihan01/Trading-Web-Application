@@ -5,8 +5,7 @@ include('includes/html_code.php');
 
 function searchItem(){
 
-	 $query = "SELECT `item_number`,`title`, `image_path1`, `items_wanted` FROM `items_available` WHERE `owner_id` = '".mysql_real_escape_string($_SESSION['user_id'])."' AND `status`= 'n'";
-	//$query = "SELECT `title`,`owner_id`, `image_path1`, `items_wanted` FROM `items_available` WHERE `category` = '".mysql_real_escape_string($y)."'";
+	$query = "SELECT `item_number`,`title`, `image_path1`, `items_wanted` FROM `items_available` WHERE `owner_id` = '".mysql_real_escape_string($_SESSION['user_id'])."'";
 	$query_run =mysql_query($query);
 	if(mysql_num_rows($query_run)==0){
 		echo "<P>Sorry, you don't have any items.</p>";
@@ -41,7 +40,7 @@ function searchItem(){
 
 
             echo "<td>";
-			echo "<a href = \" user_delete_pending.php?id=$result4 \"> <input type='Button' name = 'delete' value = 'Delete'> </a>";
+			echo "<a href = \" user_delete_item.php?id=$result4 \"> <input type='Button' name = 'delete' value = 'Delete'> </a>";
 			echo"</td>";
 			echo "</tr>";
 		}
@@ -50,13 +49,6 @@ function searchItem(){
       }
 
 	}
-
-
-
-
-
-
-
 
 
 ?>
@@ -77,7 +69,7 @@ function searchItem(){
 	<div id = 'wrapper'>
        <?php headerAndSearchCode();?>
 	   <?php right_bar();?>
-		
+	
           
 		<section id = 'right_side'>
          <?php searchItem();?>

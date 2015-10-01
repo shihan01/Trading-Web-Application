@@ -272,9 +272,6 @@ function user_id(){
        
 	    </section>
 
-	  
-
-
 		<?php footerCode(); ?>
 
 	</div>

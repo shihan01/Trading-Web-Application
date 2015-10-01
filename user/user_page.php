@@ -90,7 +90,6 @@ function searchItem(){
 	<title>Main Page</title>
 	<link rel = 'stylesheet' href = 'css/main.css'>
 	<link rel = 'stylesheet' href = 'css/form.css'>
-	
     <link rel = 'stylesheet' href = 'css/user.css'>
 </head>
 
@@ -111,7 +110,6 @@ function searchItem(){
 	    <section id = 'right_side2'>
 		<?php active_item();?>
 	    </section>
-
 
 		<?php footerCode(); ?>
 

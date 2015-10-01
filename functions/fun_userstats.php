@@ -1,6 +1,5 @@
 <?php
 //calculate users pending items
-
 function calculateUsersPendingItems($user){
 	$result = mysql_query("SELECT item_number FROM items_availabe WHERE owner_id = $user 
 	AND status = 'pending' ");

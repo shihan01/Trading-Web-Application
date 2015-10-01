@@ -28,8 +28,6 @@ if (isset($_POST['submit'])){
 	}
 
     //images
-  
-
 
     $file= $_FILES['file1'];
 	$name=$file['name'];
@@ -81,11 +79,6 @@ if (isset($_POST['submit'])){
 		$address2 = 'None';
 	}
 
-
-
-
-
-
 	if(empty($error)){
         if (empty($_POST['subtitle'])){
              $subtitle = 'None'; 
@@ -117,8 +110,6 @@ if (isset($_POST['submit'])){
 	}
 
 }
-
-
 
 
 
