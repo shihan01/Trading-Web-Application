@@ -1,0 +1,117 @@
+label{
+	display: block;
+	float:left;
+	font-weight: bold;
+	margin-right: 10px;
+	text-align: left;
+	width:120px;
+	line-height: 25px;
+	font-size: 15px;
+	color: white;
+	text-shadow:1px 1px 3px #080808;
+}
+
+#label1{
+	display: block;
+	float:left;
+	font-weight: bold;
+	margin-right: 10px;
+	text-align: left;
+	width:60px;
+	line-height: 25px;
+	font-size: 15px;
+	color: white;
+	text-shadow:1px 1px 3px #080808;
+}
+#generalform{
+	padding: 20px;
+	background: #006699; 
+	overflow:auto;
+	border-radius: 7px;
+	-moz-border-radius: 7px;
+	-webkit-border-radius: 7px;
+    
+    box-shadow: 5px 5px 15px #A0A0A0;
+    -moz-box-shadow: 5px 5px 15px #A0A0A0;
+    -webkit-box-shadow: 5px 5px 15px #A0A0A0;
+}
+
+.container{
+	width: 740;
+
+}
+
+.error{
+	float:left;
+	color: white;
+	background-color: #D00000;
+	padding: 4px;
+	
+	font-family: Arial;
+	font-weight:bold;
+	line-height: 100%;
+	border-radius: 7px;
+	-moz-border-radius: 7px;
+	-webkit-border-radius: 7px;
+}
+
+.feedback{
+   font-size: 15px;
+   padding: 5px;
+   border: none;
+   width: 500px;
+   color: white;
+   font-weight: bold;
+   text-shadow: 1px 1px 3px #080808;
+}
+
+.field{
+	margin-bottom: 7px;
+}
+
+.hintt{
+	position: absolute;
+	display: block;
+    margin: 1px;
+    font-size: 15px;
+    color:white;
+    padding: 7px 10px;
+    background: rgba(0,0,0,0.6);
+    border-radius: 7px;
+	-moz-border-radius: 7px;
+	-webkit-border-radius: 7px;
+
+}
+
+.hint{
+	display: none;
+}
+
+#confirmation{
+	width: 200px;
+	text-align: left;
+	float: left;
+}
+
+#confirimg{
+
+	margin-bottom: 5px;
+	height: 40px;
+	width: 70px;
+	margin-left: 20px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
